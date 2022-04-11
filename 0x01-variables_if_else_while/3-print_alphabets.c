@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - Entry point
  * Descr: Write a program that prints the alphabet in lowercase
@@ -25,5 +24,5 @@ int main(void)
 	}
 
 	putchar('\n');
-	result (0);
+	return (0);
 }
