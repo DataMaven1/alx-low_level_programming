@@ -14,7 +14,7 @@
  * You are not allowed to use any variable of type char
  * Return: Always 0
  */
-int main(void)
+int main()
 {
 	int a = 0;
 	int b;
