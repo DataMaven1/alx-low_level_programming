@@ -28,7 +28,7 @@ int main(void)
 			c = 0;
 			while (c < 10)
 			{
-				if (!(a == b || b == c || a == c) && (a < b && a < c))
+				if (!(a == b || b == c || a == c) && (a < b && b < c))
 				{
 					putchar('0' + a);
 					putchar('0' + b);
@@ -46,6 +46,5 @@ int main(void)
 		a++;
 	}
 
-	putchar('\n');
 	return (0);
 }
