@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
  * Description: a program that print lowercase alphabet
@@ -7,9 +9,9 @@
  */
 int main(void)
 {
-	char c = 'a';
+	char c = 'z';
 
-	while (c <= 'z')
+	while (c > 'a')
 	{
 		putchar(c);
 		c--;
