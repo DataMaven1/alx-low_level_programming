@@ -1,10 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+/**
  * main - Entry point
- * Descriptn: get a random number and compare it with 5
- * Return: Always 0
+ * Get a random number and compare it with 5
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
