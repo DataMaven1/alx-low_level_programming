@@ -2,49 +2,53 @@
 #include <stdlib.h>
 /**
  * main - Entry point
- * Descr: prints all possible different combinations of three digits.
+ * Description: Write a program that prints all possible
+ * different combinations of two digits
  * Numbers must be separated by ,, followed by a space
- * The three digits must be differen
- * 012, 120, 102, 021, 201, 210 are considered the same combination
- * of the three digits 0, 1 and 2
- * Print only the smallest combination of three digits
- * Numbers should be printed in ascending order, with three digits
- * U can only use outchar once( no printf,puts)
- * You can only use putchar six times maximum in your code
+ * The two digits must be different
+ * 01 and 10 are considered the same combination of the two digits 0 and 1
+ * Print only the smallest combination of two digits
+ * Numbers should be printed in ascending order, with two digits
+ * You can only use the putchar function
+ * (every other function (printf, puts, etc…) is forbidden)
+ * You can only use putchar five times maximum in your code
  * You are not allowed to use any variable of type char
  * Return: Always 0
  */
-int main()
+int main(void)
 {
-	int a = 0;
-	int b;
 	int c;
+	int d;
+	int e = 0;
 
-	while (a < 10)
+	while (e < 10)
 	{
-		b = 0;
-		while (b < 10)
+		d = 0;
+		while (d < 10)
 		{
 			c = 0;
 			while (c < 10)
 			{
-				if (!(a == b || b == c || a == c) && (a < b && b < c))
+				if (c != d && d != e && e < d && d < c)
 				{
-					putchar('0' + a);
-					putchar('0' + b);
+					putchar('0' + e);
+					putchar('0' + d);
 					putchar('0' + c);
-					if (!(a == 7 && b == 8 && c == 9))
+
+					if (c + d + e != 9 + 8 + 7)
 					{
 						putchar(',');
 						putchar(' ');
 					}
+
 				}
 				c++;
 			}
-			b++;
+			d++;
 		}
-		a++;
+		e++;
 	}
 
+	putchar('\n');
 	return (0);
 }
