@@ -23,7 +23,7 @@ void print_char(va_list arg)
 
 /**
  * print_int - Prints an int.
- * @arg: A list of arguments pointing to'the 
+ * @arg: A list of arguments pointing to'the
  * interger to be printed
  */
 
@@ -37,7 +37,7 @@ void print_int(va_list arg)
 
 /**
  * print_float - Prints a float.
- * @arg: a list of argumanets pointing to the 
+ * @arg: a list of argumanets pointing to the
  * float to be printed
  */
 
